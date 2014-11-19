@@ -31,7 +31,7 @@ public class LargestProductInASet {
                     secondIndex = (i + 13);
                     numberArray[i] = Integer.parseInt(largeNumber.substring(firstIndex,secondIndex));
             }
-            for (int x = 0;x)
+            for (int x = 0;x);
 
 
     }
