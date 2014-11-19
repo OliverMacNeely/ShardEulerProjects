@@ -1,6 +1,6 @@
 public class LargestProductInASeries {
     public static void main(String[] args) {
-        String largeNumber = new String("73167176531330624919225119674426574742355349194934" +
+        String largeNumber = "73167176531330624919225119674426574742355349194934" +
                 "96983520312774506326239578318016984801869478851843" +
                 "85861560789112949495459501737958331952853208805511" +
                 "12540698747158523863050715693290963295227443043557" +
@@ -19,8 +19,8 @@ public class LargestProductInASeries {
                 "07198403850962455444362981230987879927244284909188" +
                 "84580156166097919133875499200524063689912560717606" +
                 "05886116467109405077541002256983155200055935729725" +
-                "71636269561882670428252483600823257530420752963450");
-        int firstIndex = 0, secondIndex = 0;
+                "71636269561882670428252483600823257530420752963450";
+        int firstIndex, secondIndex;
         int numberArray[] = new int[997];
         for (int i = 0; i < 988; i++) {
             firstIndex = i;
@@ -30,12 +30,16 @@ public class LargestProductInASeries {
         int temp = 1;
         int ans = 0;
         for (int x = 12; x < 997; x++) {
-            for (int f = 0; f < 13; f++) temp *= numberArray[x - f];
+            for (int f = 0; f < 13; f++) {
+                temp *= numberArray[x - f];
+            }
             if (temp > ans) {
                 ans = temp;
                 System.out.println(ans);
             }
-            temp = 0;
+            else{}
+            temp = 1;
         }
+        System.out.println("hi");
     }
 }
