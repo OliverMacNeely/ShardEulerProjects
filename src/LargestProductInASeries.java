@@ -20,26 +20,27 @@ public class LargestProductInASeries {
                 "84580156166097919133875499200524063689912560717606" +
                 "05886116467109405077541002256983155200055935729725" +
                 "71636269561882670428252483600823257530420752963450";
+
         int firstIndex, secondIndex;
-        int numberArray[] = new int[997];
-        for (int i = 0; i < 988; i++) {
+        long numberArray[] = new long[999];//997 originally
+        for (int i = 0; i < 999; i++) {//988 originally
             firstIndex = i;
             secondIndex = (i + 1);
-            numberArray[i] = Integer.parseInt(largeNumber.substring(firstIndex, secondIndex));
+            numberArray[i] = Long.parseLong(largeNumber.substring(firstIndex, secondIndex));
         }
-        int temp = 1;
-        int ans = 0;
+        long temp = 1;
+        long ans = 0;
         for (int x = 12; x < 997; x++) {
             for (int f = 0; f < 13; f++) {
                 temp *= numberArray[x - f];
             }
+            //System.out.println(temp);
             if (temp > ans) {
                 ans = temp;
-                System.out.println(ans);
             }
             else{}
             temp = 1;
         }
-        System.out.println("hi");
+        System.out.println("hi there " + ans);
     }
 }
