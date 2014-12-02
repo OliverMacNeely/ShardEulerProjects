@@ -1,0 +1,9460 @@
+GAME
+{
+	version = 0.25.0
+	Title = LSA (SANDBOX)
+	Description = No description available.
+	linkURL = 
+	linkCaption = 
+	Mode = SANDBOX
+	Status = 1
+	scene = 5
+	flag = Flags/069 - LEGO Space Program
+	launchID = 4
+	PARAMETERS
+	{
+		preset = Normal
+		FLIGHT
+		{
+			CanQuickSave = True
+			CanQuickLoad = True
+			CanAutoSave = True
+			CanUseMap = True
+			CanSwitchVesselsNear = True
+			CanSwitchVesselsFar = True
+			CanTimeWarpHigh = True
+			CanTimeWarpLow = True
+			CanEVA = True
+			CanIVA = True
+			CanBoard = True
+			CanRestart = True
+			CanLeaveToEditor = True
+			CanLeaveToTrackingStation = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		EDITOR
+		{
+			CanSave = True
+			CanLoad = True
+			CanStartNew = True
+			CanLaunch = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+			startUpMode = 0
+			craftFileToLoad = 
+		}
+		TRACKINGSTATION
+		{
+			CanFlyVessel = True
+			CanAbortVessel = True
+			CanLeaveToSpaceCenter = True
+			CanLeaveToMainMenu = False
+		}
+		SPACECENTER
+		{
+			CanGoInVAB = True
+			CanGoInSPH = True
+			CanGoInTrackingStation = True
+			CanLaunchAtPad = True
+			CanLaunchAtRunway = True
+			CanLeaveToMainMenu = True
+		}
+		DIFFICULTY
+		{
+			AutoHireCrews = True
+			MissingCrewsRespawn = True
+			BypassEntryPurchaseAfterResearch = True
+			AllowStockVessels = True
+			IndestructibleFacilities = False
+		}
+		CAREER
+		{
+			StartingFunds = 25000
+			StartingScience = 0
+			StartingReputation = 0
+			FundsGainMultiplier = 1
+			RepGainMultiplier = 1
+			ScienceGainMultiplier = 1
+			FundsLossMultiplier = 1
+			RepLossMultiplier = 1
+		}
+	}
+	SCENARIO
+	{
+		name = ProgressTracking
+		scene = 7, 8, 5
+		Progress
+		{
+			FirstLaunch
+			{
+				completed = 2079.18296081501
+			}
+			AltitudeRecord
+			{
+				completed = 204.827473144554
+				record = 70000
+			}
+			ReachedSpace
+			{
+				completed = 204.827473144554
+				vessel
+				{
+					name = Station Core
+					flag = Flags/069 - LEGO Space Program
+				}
+				crew
+				{
+					crews = Jebediah Kerman, Bill Kerman
+				}
+			}
+			Kerbin
+			{
+				reached = 676.888662109398
+				Orbit
+				{
+					completed = 676.888662109398
+					vessel
+					{
+						name = Station Core
+						flag = Flags/069 - LEGO Space Program
+					}
+					crew
+					{
+						crews = Jebediah Kerman, Bill Kerman
+					}
+				}
+			}
+		}
+	}
+	SCENARIO
+	{
+		name = VesselRecovery
+		scene = 5, 7, 8, 6, 9
+	}
+	SCENARIO
+	{
+		name = ScenarioDestructibles
+		scene = 5, 7, 6, 9, 8
+		SpaceCenter/KSCAdminBuilding/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCCrewBuilding/building
+		{
+			intact = True
+		}
+		SpaceCenter/FlagPole
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_launchPad
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_sphereTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/KSCLaunchPad/LaunchPadMedium/KSCFlagPoleLaunchPad
+		{
+			intact = True
+		}
+		SpaceCenter/KSCMissionControl/building
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/SmallLab
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/CentralBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/CornerLab
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/WindTunnel
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/Observatory
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRnDFacility/SideLab
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_SE
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_NE
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_NW
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/model_runway_new_v43/runway_light_SW
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/End09
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/End27
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section1
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section2
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section3
+		{
+			intact = True
+		}
+		SpaceCenter/KSCRunway/Section4
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/ksp_pad_waterTower
+		{
+			intact = True
+		}
+		SpaceCenter/KSCSpacePlaneHangar/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/dish_array/dish_south
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/dish_array/dish_north
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/dish_array/dish_east
+		{
+			intact = True
+		}
+		SpaceCenter/KSCTrackingStation/MainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/ksp_pad_cylTank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/Tank
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/mainBuilding
+		{
+			intact = True
+		}
+		SpaceCenter/KSCVehicleAssemblyBuilding/PodMemorial
+		{
+			intact = True
+		}
+	}
+	SCENARIO
+	{
+		name = ScenarioDiscoverableObjects
+		scene = 7, 8, 5
+		 = 1401089533
+		sizeCurve
+		{
+			key = 0 0 1.5 1.5
+			key = 0.3 0.45 0.875 0.875
+			key = 0.7 0.55 0.875 0.875
+			key = 1 1 1.5 1.5
+		}
+	}
+	SCENARIO
+	{
+		name = KerbalAlarmClockScenario
+		scene = 5, 7, 8
+		KACAlarmListStorage
+		{
+			list
+			{
+				Item
+				{
+					VesselID = db7e148e-52c7-48cf-b2d3-2b99459a4de3
+					ID = 5cedb20051ac4b139462c57d6b00c1fd
+					Name = Station Solar Truss
+					NotesStorage = Time to pay attention to\r\n    Station Solar Truss\r\nNearing Maneuver Node
+					TypeOfAlarm = Maneuver
+					AlarmTimeStorage = 22716.363084516
+					AlarmMarginSecs = 60
+					Enabled = True
+					AlarmAction = KillWarp
+					ManNodesStorage = 22776.363084516,0,0,46.067116125482,-0.006369479,0.9113027,-0.00328164,0.4116747
+					XferOriginBodyName = 
+					XferTargetBodyName = 
+					RepeatAlarm = False
+					RepeatAlarmPeriodStorage = 0
+					TargetObjectStorage = 
+					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
+					ContractAlarmType = Expire
+					DeleteOnClose = False
+					Triggered = False
+					Actioned = False
+					AlarmWindowClosed = False
+				}
+			}
+		}
+	}
+	FLIGHTSTATE
+	{
+		version = 0.25.0
+		UT = 2995.16248718169
+		activeVessel = 8
+		mapViewFiltering = -1026
+		VESSEL
+		{
+			pid = d37fc79b49f149d49ce2440effaf8f33
+			name = Ast. HSJ-227
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 0.02
+			lct = 0.02
+			root = 0
+			lat = -2.83448050914831
+			lon = 181.081315082281
+			alt = 14594728259.0595
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2984337,0.402898,-0.8173988,0.283672
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15240607800.7728
+				ECC = 0.109160500277536
+				INC = 2.87223667476284
+				LPE = 2.11729116886696
+				LAN = 261.773338228393
+				MNA = 6.22770561608345
+				EPH = 2043585.75608398
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 559298752
+				mid = 559298752
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 0.02
+				lifetime = 586354.710388184
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = c32c074602054803975bfa4227c57821
+			name = Ast. XUC-428
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 14.0999999999998
+			lct = 14.0999999999998
+			root = 0
+			lat = 1.17502990486731
+			lon = 183.020310547834
+			alt = 15460962423.3893
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3234102,-0.4067379,0.8225092,0.23119
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 16016754545.4964
+				ECC = 0.151486430113578
+				INC = 1.18092726900756
+				LPE = 176.037060260436
+				LAN = 98.7613078111953
+				MNA = 0.0404752928274895
+				EPH = 2507459.803125
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1245471819
+				mid = 1245471819
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 14.0999999999998
+				lifetime = 126424.896240234
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 03f7755b65204829a250ec8e62acc18a
+			name = Station Core
+			type = Ship
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 2034.72296081502
+			lct = 32.3399999999994
+			root = 0
+			lat = -0.240858697488014
+			lon = 211.732784543116
+			alt = 155449.488537501
+			hgt = -1
+			nrm = -0.5533653,0.1338811,0.8221087
+			rot = 0.6669897,0.465122,-0.1946601,-0.5485379
+			CoM = 1.135189E-05,0.1551866,-1.963228E-05
+			stg = 1
+			prst = False
+			ref = 427094515
+			ctrl = True
+			cPch = 
+			cHdg = 
+			cMod = 0
+			ORBIT
+			{
+				SMA = 753641.424224818
+				ECC = 0.00240791499586361
+				INC = 0.250000629618333
+				LPE = 110.426690912963
+				LAN = 50.641122324947
+				MNA = 3.05599800778936
+				EPH = 2067.06296081502
+				REF = 1
+			}
+			PART
+			{
+				name = mk2LanderCabin
+				uid = 427094515
+				mid = 117333654
+				launchID = 1
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				attN = top, 12
+				mass = 2.5
+				temp = -75.49089
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = mk2LanderCabin (Station Core)
+				modCost = 0
+				crew = Jebediah Kerman
+				crew = Bill Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Report
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					EVENTS
+					{
+						StoreDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Store Experiments (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Stored Data (0)
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = ToggleFlag
+							guiName = ToggleFlag
+							category = ToggleFlag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RasterPropMonitorComputer
+					isEnabled = True
+					data = activePage33$26
+					vesselDescription = 
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = JSINonTransparentPod
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+						at = Kerbin
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+						at = Kerbin
+					}
+					SubOrbited
+					{
+						at = Kerbin
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 100
+					maxAmount = 100
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = MonoPropellant
+					amount = 40
+					maxAmount = 40
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = crewCabin
+				uid = 4101835220
+				mid = 117333654
+				launchID = 1
+				parent = 0
+				position = 0,-1.39048004150391,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 2.5
+				temp = -75.21475
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = crewCabin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Report
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					EVENTS
+					{
+						StoreDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Store Experiments (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Stored Data (0)
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = ToggleFlag
+							guiName = ToggleFlag
+							category = ToggleFlag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = JSINonTransparentPod
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+						at = Kerbin
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+						at = Kerbin
+					}
+					SubOrbited
+					{
+						at = Kerbin
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = batteryBankLarge
+				uid = 228617024
+				mid = 117333654
+				launchID = 1
+				parent = 1
+				position = 0,-2.48738098144531,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 1
+				attN = bottom, 3
+				mass = 0.2
+				temp = -75.10666
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = batteryBankLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 4000
+					maxAmount = 4000
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = asasmodule1-2
+				uid = 3752098269
+				mid = 117333654
+				launchID = 1
+				parent = 2
+				position = 0,-2.86238098144531,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 2
+				attN = bottom, 4
+				mass = 0.2
+				temp = -75.0921
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = asasmodule1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = kip6hub
+				uid = 3987410565
+				mid = 117333654
+				launchID = 1
+				parent = 3
+				position = 0,-4.41238021850586,0
+				rotation = -0.9238796,3.720233E-08,0.3826835,-8.108546E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = right, 8
+				attN = left, 7
+				attN = back, 6
+				attN = front, 5
+				attN = top, 9
+				attN = bottom, 3
+				mass = 3
+				temp = -75.22171
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = kip6hub
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 1139141531
+				mid = 117333654
+				launchID = 1
+				parent = 4
+				position = 0.919238030910492,-4.41238021850586,0.91923862695694
+				rotation = 0.2705981,0.6532815,0.6532816,-0.270598
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 4
+				mass = 0.2
+				temp = -74.88743
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 2220397912
+				mid = 117333654
+				launchID = 1
+				parent = 4
+				position = -0.919238448143005,-4.41238021850586,-0.919239163398743
+				rotation = 0.6532816,-0.2705979,-0.2705981,-0.6532815
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 4
+				mass = 0.2
+				temp = -74.77602
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 3707521284
+				mid = 117333654
+				launchID = 1
+				parent = 4
+				position = -0.919238209724426,-4.41238021850586,0.919238448143005
+				rotation = 0.2705979,-0.6532815,-0.6532815,-0.2705982
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 4
+				mass = 0.2
+				temp = -74.66483
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 2386536505
+				mid = 117333654
+				launchID = 1
+				parent = 4
+				position = 0.919237792491913,-4.41238021850586,-0.919238924980164
+				rotation = -0.6532817,-0.270598,-0.270598,0.6532815
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 4
+				mass = 0.2
+				temp = -74.55388
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 1923292168
+				mid = 117333654
+				launchID = 1
+				parent = 4
+				position = 0,-5.71238136291504,0
+				rotation = 1,-4.180162E-07,2.980233E-08,4.856247E-09
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 4
+				mass = 0.2
+				temp = -74.44305
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				uid = 954153851
+				mid = 117333654
+				launchID = 1
+				parent = 0
+				position = -1.14055860042572,0.134159088134766,9.5367431640625E-07
+				rotation = 0.5003681,-0.49958,0.5004197,0.4996317
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 11
+				srfN = srfAttach, 0
+				attN = None, -1
+				attN = None, -1
+				mass = 0.05
+				temp = -74.93686
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				uid = 1393507116
+				mid = 117333654
+				launchID = 1
+				parent = 0
+				position = 1.14055824279785,0.134159088134766,0
+				rotation = 0.5004197,0.4996317,-0.5003681,0.4995799
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 10
+				srfN = srfAttach, 0
+				attN = None, -1
+				attN = None, -1
+				mass = 0.05
+				temp = -74.82277
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = crewCabin
+				uid = 3190051507
+				mid = 117333654
+				launchID = 1
+				parent = 0
+				position = 0,1.73882865905762,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 13
+				attN = bottom, 0
+				mass = 2.5
+				temp = -75.11591
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = crewCabin
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Report
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					EVENTS
+					{
+						StoreDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Store Experiments (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Stored Data (0)
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = ToggleFlag
+							guiName = ToggleFlag
+							category = ToggleFlag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = JSINonTransparentPod
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+						at = Kerbin
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+						at = Kerbin
+					}
+					SubOrbited
+					{
+						at = Kerbin
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = batteryBankLarge
+				uid = 3705691915
+				mid = 117333654
+				launchID = 1
+				parent = 12
+				position = 0,2.85072898864746,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 14
+				attN = bottom, 12
+				mass = 0.2
+				temp = -75.06933
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = batteryBankLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 4000
+					maxAmount = 4000
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = asasmodule1-2
+				uid = 332901998
+				mid = 117333654
+				launchID = 1
+				parent = 13
+				position = 0,3.21072959899902,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 15
+				attN = bottom, 13
+				mass = 0.2
+				temp = -75.07961
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = asasmodule1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = kip6hub
+				uid = 1554857577
+				mid = 117333654
+				launchID = 1
+				parent = 14
+				position = 0,4.7607307434082,0
+				rotation = 0,-0.3826835,0,0.9238796
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = right, 19
+				attN = left, 18
+				attN = back, 17
+				attN = front, 16
+				attN = top, 20
+				attN = bottom, 14
+				mass = 3
+				temp = -75.21957
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = kip6hub
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 1096257339
+				mid = 117333654
+				launchID = 1
+				parent = 15
+				position = 0.919238805770874,4.7607307434082,-0.919237971305847
+				rotation = -0.270598,-0.6532816,0.6532815,-0.2705981
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 15
+				mass = 0.2
+				temp = -74.88663
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 2286688589
+				mid = 117333654
+				launchID = 1
+				parent = 15
+				position = -0.919238448143005,4.7607307434082,0.919238328933716
+				rotation = -0.6532816,0.2705981,-0.270598,-0.6532816
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 15
+				mass = 0.2
+				temp = -74.77526
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 2884325510
+				mid = 117333654
+				launchID = 1
+				parent = 15
+				position = -0.919238567352295,4.7607307434082,-0.919237971305847
+				rotation = -0.2705982,0.6532815,-0.6532815,-0.270598
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 15
+				mass = 0.2
+				temp = -74.66403
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 444781822
+				mid = 117333654
+				launchID = 1
+				parent = 15
+				position = 0.91923862695694,4.7607307434082,0.919238924980164
+				rotation = 0.6532815,0.270598,-0.2705981,0.6532816
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 15
+				mass = 0.2
+				temp = -74.55309
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 186008437
+				mid = 117333654
+				launchID = 1
+				parent = 15
+				position = 0,6.06072998046875,0
+				rotation = -8.429373E-08,0,-4.146759E-07,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 15
+				mass = 0.2
+				temp = -74.44232
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = rtg
+				uid = 3331908101
+				mid = 117333654
+				launchID = 1
+				parent = 12
+				position = 0.826065123081207,1.08916854858398,0
+				rotation = 0.4999999,-0.5000001,-0.5,-0.5000001
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				srfN = srfAttach, 12
+				attN = None, -1
+				attN = None, -1
+				mass = 0.08
+				temp = -74.69212
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = rtg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = rtg
+				uid = 971520286
+				mid = 117333654
+				launchID = 1
+				parent = 12
+				position = -0.826065540313721,1.08916854858398,9.5367431640625E-07
+				rotation = -0.5,-0.5,-0.4999999,0.5000001
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 21
+				srfN = srfAttach, 12
+				attN = None, -1
+				attN = None, -1
+				mass = 0.08
+				temp = -74.57719
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = rtg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 217.80747314456
+				Gear = False, 1803.94296081526
+				Light = False, 1807.52296081526
+				RCS = False, 0
+				SAS = True, 2065.32296081502
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = -0.001658602
+				yaw = -0.001339526
+				roll = 2.624533E-06
+				trimPitch = 0
+				trimYaw = 0.002
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 9a7535733b7641bfb71baa4428544297
+			name = Ast. JLE-294
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 32.9799999999995
+			lct = 32.9799999999995
+			root = 0
+			lat = 1.03202011257604
+			lon = 181.360164134872
+			alt = 14136117986.154
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.7503352,-0.2385793,-0.4239207,0.4476251
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14426712735.2421
+				ECC = 0.0559830913836427
+				INC = 1.03234637271792
+				LPE = 182.593534017985
+				LAN = 89.9469486992396
+				MNA = 6.26959082775769
+				EPH = 2345158.65138672
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1759717553
+				mid = 1759717553
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 32.9799999999995
+				lifetime = 1237163.10424805
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 7f4d704f4d5f43fe80a2c4a1a805d2fc
+			name = Ast. QVU-830
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 92.9999999999986
+			lct = 92.9999999999986
+			root = 0
+			lat = 0.335355953861382
+			lon = 201.693362279076
+			alt = 16471039485.4742
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6474252,-0.2623383,0.1369862,0.7023204
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 15226289332.695
+				ECC = 0.114901879011889
+				INC = 0.368609100771996
+				LPE = 218.105311074022
+				LAN = 136.295159901191
+				MNA = 5.96868563696122
+				EPH = 3878576.09326172
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1960110425
+				mid = 1960110425
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 92.9999999999986
+				lifetime = 293562.995910645
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 4d3bf001ba954d61add0cfb9cc9a8532
+			name = Ast. DBD-257
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 107.999999999996
+			lct = 107.999999999996
+			root = 0
+			lat = -0.332752048707861
+			lon = 181.947062480358
+			alt = 13959393761.954
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.1416775,0.2206253,-0.7418361,0.6171961
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14009860268.2364
+				ECC = 0.0303725863083425
+				INC = 0.944514170814523
+				LPE = 321.876508501496
+				LAN = 341.410735547554
+				MNA = 0.453275079097169
+				EPH = 3854810.19726563
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 665022090
+				mid = 665022090
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 107.999999999996
+				lifetime = 1520961.87744141
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 9a592479a48f4a5bb7af982bf49239a5
+			name = Ast. FKX-732
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 751.32866210933
+			lct = 751.32866210933
+			root = 0
+			lat = 1.97395611728009
+			lon = 183.741407054264
+			alt = 14429617360.8949
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3087897,0.3676031,-0.7202216,0.500797
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14309655938.0657
+				ECC = 0.0507351800069519
+				INC = 2.37934361826022
+				LPE = 180.215536281222
+				LAN = 128.322836726574
+				MNA = 0.0196842932804272
+				EPH = 3321848.22807617
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1230670706
+				mid = 1230670706
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 751.32866210933
+				lifetime = 1263686.43493652
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 671ba9a18b7a441eb29ba0fd54eea0db
+			name = Ast. MCX-607
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 989.364931640583
+			lct = 989.364931640583
+			root = 0
+			lat = 1.12484237942475
+			lon = 187.08515908562
+			alt = 14673398060.0421
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.4827329,0.7980509,-0.3466415,0.09961642
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 14306346997.8418
+				ECC = 0.054565963360946
+				INC = 1.51059289375577
+				LPE = 193.585508907519
+				LAN = 139.788356615479
+				MNA = 6.00212688651427
+				EPH = 3467717.84393555
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				uid = 1401089533
+				mid = 1401089533
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				expt = 0.1
+				state = 1
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 989.364931640583
+				lifetime = 268964.861297607
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = db7e148e52c748cfb2d32b99459a4de3
+			name = Station Solar Truss
+			type = Probe
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 916.939526366674
+			lct = 2078.14296081501
+			root = 0
+			lat = -0.461394190931684
+			lon = 56.5667534441179
+			alt = 111823.571630439
+			hgt = -1
+			nrm = -0.5156273,0.8567534,0.01011156
+			rot = 0.02082476,0.7031518,0.7106818,-0.008686747
+			CoM = 8.72612E-05,-10.64363,-9.089708E-07
+			stg = 1
+			prst = False
+			ref = 1810303388
+			ctrl = True
+			cPch = 0.150519
+			cHdg = -12.6597
+			cMod = 0
+			ORBIT
+			{
+				SMA = 712459.811595888
+				ECC = 0.00590637012229472
+				INC = 0.82107427327548
+				LPE = 244.29666299309
+				LAN = 230.673814239381
+				MNA = 1.41105145064345
+				EPH = 2995.16248718169
+				REF = 1
+			}
+			PART
+			{
+				name = trussPiece3x
+				uid = 1675017311
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 3
+				attN = top, 30
+				mass = 0.375
+				temp = -201.6611
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = trussPiece3x
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeSolarPanel
+				uid = 3718282456
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = -0.324660241603851,-0.0504302978515625,1.70038259028615E-08
+				rotation = 0,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 2
+				srfN = srfAttach, 0
+				mass = 0.35
+				temp = -200.5867
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, -0.7071068, 0.7071068)
+					stateString = RETRACTED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 1
+					EVENTS
+					{
+						Extend
+						{
+							active = True
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeSolarPanel
+				uid = 892578115
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0.324660241603851,-0.0504302978515625,1.70038259028615E-08
+				rotation = 4.928983E-22,-1,0,4.371139E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 1
+				srfN = srfAttach, 0
+				mass = 0.35
+				temp = -200.3457
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, -0.7071068, 0.7071068)
+					stateString = RETRACTED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 1
+					EVENTS
+					{
+						Extend
+						{
+							active = True
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = trussPiece3x
+				uid = 1295151250
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,-2.95046997070313,-3.55362317350227E-09
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 6
+				attN = top, 0
+				mass = 0.375
+				temp = -201.2264
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = trussPiece3x
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeSolarPanel
+				uid = 2115238022
+				mid = 330095249
+				launchID = 3
+				parent = 3
+				position = -0.324660241603851,-3.00090026855469,1.1775830444094E-07
+				rotation = 0,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 5
+				srfN = srfAttach, 3
+				mass = 0.35
+				temp = -200.3689
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, -0.7071068, 0.7071068)
+					stateString = RETRACTED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 1
+					EVENTS
+					{
+						Extend
+						{
+							active = True
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeSolarPanel
+				uid = 2848995625
+				mid = 330095249
+				launchID = 3
+				parent = 3
+				position = 0.324660241603851,-3.00090026855469,1.34501760840067E-08
+				rotation = 4.928983E-22,-1,0,4.371139E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				srfN = srfAttach, 3
+				mass = 0.35
+				temp = -200.13
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, -0.7071068, 0.7071068)
+					stateString = RETRACTED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 1
+					EVENTS
+					{
+						Extend
+						{
+							active = True
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = trussPiece3x
+				uid = 4087502471
+				mid = 330095249
+				launchID = 3
+				parent = 3
+				position = 0,-5.90095138549805,-1.11411509351456E-07
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 9
+				attN = top, 3
+				mass = 0.375
+				temp = -201.4834
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = trussPiece3x
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeSolarPanel
+				uid = 643849887
+				mid = 330095249
+				launchID = 3
+				parent = 6
+				position = -0.324660241603851,-5.95138168334961,1.14208432933083E-07
+				rotation = 0,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 8
+				srfN = srfAttach, 6
+				mass = 0.35
+				temp = -200.4961
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, -0.7071068, 0.7071068)
+					stateString = RETRACTED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 1
+					EVENTS
+					{
+						Extend
+						{
+							active = True
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeSolarPanel
+				uid = 1213948880
+				mid = 330095249
+				launchID = 3
+				parent = 6
+				position = 0.324660241603851,-5.95138168334961,-9.44078237807844E-08
+				rotation = 4.928983E-22,-1,0,4.371139E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 7
+				srfN = srfAttach, 6
+				mass = 0.35
+				temp = -200.2569
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeSolarPanel
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDeployableSolarPanel
+					isEnabled = True
+					currentRotation = (0, 0, -0.7071068, 0.7071068)
+					stateString = RETRACTED
+					storedAnimationTime = 0
+					storedAnimationSpeed = 1
+					EVENTS
+					{
+						Extend
+						{
+							active = True
+							guiActive = True
+							guiIcon = Extend Panels
+							guiName = Extend Panels
+							category = Extend Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Retract
+						{
+							active = False
+							guiActive = True
+							guiIcon = Retract Panels
+							guiName = Retract Panels
+							category = Retract Panels
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ExtendPanelsAction
+						{
+							actionGroup = None
+						}
+						ExtendAction
+						{
+							actionGroup = None
+						}
+						RetractAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = trussAdapter
+				uid = 2740416286
+				mid = 330095249
+				launchID = 3
+				parent = 6
+				position = 0,-8.02557182312012,-9.53975813899888E-08
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 10
+				attN = top, 6
+				mass = 0.25
+				temp = -200.7117
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = trussAdapter
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPort2
+				uid = 1351847976
+				mid = 330095249
+				launchID = 3
+				parent = 9
+				position = 0,-8.43639183044434,-1.50594587466912E-07
+				rotation = -1,0,0,-8.42937E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 11
+				attN = None, -1
+				mass = 0.05
+				temp = -200.9568
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPort2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = PreAttached
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeAdapter
+				uid = 2753990491
+				mid = 330095249
+				launchID = 3
+				parent = 10
+				position = 0,-9.46927070617676,9.3358039521263E-08
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 10
+				attN = bottom, 12
+				mass = 0.1
+				temp = -201.7634
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeAdapter
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = probeStackLarge
+				uid = 1810303388
+				mid = 330095249
+				launchID = 3
+				parent = 11
+				position = 0,-10.4142799377441,4.11991322835092E-07
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 13
+				attN = top, 11
+				mass = 0.5
+				temp = -201.2594
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = probeStackLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+						at = Kerbin
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+						at = Kerbin
+					}
+					SubOrbited
+					{
+						at = Kerbin
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 29.9996208504548
+					maxAmount = 30
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = RCSTank1-2
+				uid = 2074002711
+				mid = 330095249
+				launchID = 3
+				parent = 12
+				position = 0,-11.1042804718018,6.44642113911686E-07
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 12
+				attN = bottom, 14
+				mass = 0.4
+				temp = -201.5523
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = RCSTank1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = MonoPropellant
+					amount = 750
+					maxAmount = 750
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = asasmodule1-2
+				uid = 3533277736
+				mid = 330095249
+				launchID = 3
+				parent = 13
+				position = 0,-11.8542804718018,8.97523023013491E-07
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 13
+				attN = bottom, 15
+				mass = 0.2
+				temp = -200.8752
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = asasmodule1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KW2mDecoupler
+				uid = 3428221490
+				mid = 330095249
+				launchID = 3
+				parent = 14
+				position = 0,-12.234281539917,1.02564990811516E-06
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 16
+				attN = top, 14
+				mass = 0.5
+				temp = -200.5948
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mDecoupler
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = False
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = probeStackLarge
+				uid = 3028439213
+				mid = 330095249
+				launchID = 3
+				parent = 15
+				position = 0,-12.5542812347412,1.13354599307058E-06
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 17
+				attN = top, 15
+				mass = 0.5
+				temp = -200.4321
+				expt = 0
+				state = 1
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = probeStackLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Surfaced
+					{
+					}
+					Flew
+					{
+						at = Kerbin
+					}
+					FlewBy
+					{
+					}
+					Orbited
+					{
+						at = Kerbin
+					}
+					SubOrbited
+					{
+						at = Kerbin
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 29.9996208504548
+					maxAmount = 30
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KW2mtankPancake
+				uid = 1918291328
+				mid = 330095249
+				launchID = 3
+				parent = 16
+				position = 0,-13.2130317687988,1.35566006065346E-06
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 16
+				attN = bottom, 18
+				mass = 0.5
+				temp = -200.2369
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mtankPancake
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 403.133242172951
+					maxAmount = 405
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 492.718406990379
+					maxAmount = 495
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KW2mengineVestaVR9D
+				uid = 317582757
+				mid = 330095249
+				launchID = 3
+				parent = 17
+				position = 0,-14.9317817687988,1.93517917068675E-06
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 2
+				sqor = 1
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = top2, 17
+				attN = None, -1
+				mass = 5
+				temp = -199.9109
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mengineVestaVR9D
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.199999995529652
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = rtg
+				uid = 3442625521
+				mid = 330095249
+				launchID = 3
+				parent = 13
+				position = -0.643014252185822,-11.161750793457,-0.643014073371887
+				rotation = 0.2705981,0.6532818,0.6532813,-0.2705981
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 20
+				srfN = srfAttach, 13
+				attN = None, -1
+				attN = None, -1
+				mass = 0.08
+				temp = -200.2962
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = rtg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = rtg
+				uid = 1264876600
+				mid = 330095249
+				launchID = 3
+				parent = 13
+				position = 0.643014550209045,-11.161750793457,0.643015086650848
+				rotation = 0.6532813,-0.2705981,-0.270598,-0.6532817
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 19
+				srfN = srfAttach, 13
+				attN = None, -1
+				attN = None, -1
+				mass = 0.08
+				temp = -200.0727
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = rtg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = rtg
+				uid = 1038472445
+				mid = 330095249
+				launchID = 3
+				parent = 13
+				position = -0.651982247829437,-11.1030006408691,0.651983261108398
+				rotation = 0.6532816,0.2705982,0.2705981,-0.6532814
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 22
+				srfN = srfAttach, 13
+				attN = None, -1
+				attN = None, -1
+				mass = 0.08
+				temp = -199.8446
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = rtg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = rtg
+				uid = 3603144792
+				mid = 330095249
+				launchID = 3
+				parent = 13
+				position = 0.651982665061951,-11.1030006408691,-0.651982128620148
+				rotation = 0.2705981,-0.6532814,-0.6532816,-0.2705981
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 21
+				srfN = srfAttach, 13
+				attN = None, -1
+				attN = None, -1
+				mass = 0.08
+				temp = -199.6161
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = rtg
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 0
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Generator
+							guiName = Activate Generator
+							category = Activate Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Generator
+							guiName = Shutdown Generator
+							category = Shutdown Generator
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = B9.Structure.SN.Strut
+				uid = 3796682432
+				mid = 330095249
+				launchID = 3
+				parent = 11
+				position = 0,-9.59211158752441,0.969156622886658
+				rotation = -0.135028,0.6940947,-0.1350281,0.6940948
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: largeAdapter_31; pos: -4.874403,12.06374,0.07130181; dir: -0.3746231,0.927161,0.0054879
+				sym = 24
+				sym = 25
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 11
+				mass = 0.05
+				temp = -200.4028
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Structure.SN.Strut
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = B9.Structure.SN.Strut
+				uid = 3359393696
+				mid = 330095249
+				launchID = 3
+				parent = 11
+				position = 0.921722590923309,-9.59211158752441,0.299485951662064
+				rotation = -0.1886075,0.969513,-0.02987254,0.1535559
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: largeAdapter_31; pos: -4.850903,12.00582,0.07103719; dir: -0.3746231,0.927161,0.0054879
+				sym = 23
+				sym = 25
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 11
+				mass = 0.05
+				temp = -200.1783
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Structure.SN.Strut
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = B9.Structure.SN.Strut
+				uid = 1088539789
+				mid = 330095249
+				launchID = 3
+				parent = 11
+				position = 0.569655895233154,-9.59211158752441,-0.784063339233398
+				rotation = -0.1701453,0.8746104,0.0866933,-0.4456362
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: largeAdapter_31; pos: -4.876361,12.06875,0.07152976; dir: -0.3746231,0.927161,0.0054879
+				sym = 23
+				sym = 24
+				sym = 26
+				sym = 27
+				srfN = srfAttach, 11
+				mass = 0.05
+				temp = -199.9524
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Structure.SN.Strut
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = B9.Structure.SN.Strut
+				uid = 1020346037
+				mid = 330095249
+				launchID = 3
+				parent = 11
+				position = -0.569656312465668,-9.59211158752441,-0.784063339233398
+				rotation = -0.08669337,0.4456361,0.1701452,-0.8746104
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: largeAdapter_31; pos: -4.86268,12.03456,0.07131623; dir: -0.3746231,0.927161,0.0054879
+				sym = 23
+				sym = 24
+				sym = 25
+				sym = 27
+				srfN = srfAttach, 11
+				mass = 0.05
+				temp = -199.7244
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Structure.SN.Strut
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = B9.Structure.SN.Strut
+				uid = 1982948118
+				mid = 330095249
+				launchID = 3
+				parent = 11
+				position = -0.921722233295441,-9.59211158752441,0.299486130475998
+				rotation = 0.02987245,-0.1535558,0.1886075,-0.969513
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				cData = tgt: largeAdapter_31; pos: -4.868688,12.04936,0.07129376; dir: -0.3746231,0.927161,0.0054879
+				sym = 23
+				sym = 24
+				sym = 25
+				sym = 26
+				srfN = srfAttach, 11
+				mass = 0.05
+				temp = -199.5009
+				expt = 0
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Structure.SN.Strut
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+			}
+			PART
+			{
+				name = B9.Control.RCS.Block.R12
+				uid = 761000785
+				mid = 330095249
+				launchID = 3
+				parent = 6
+				position = 0,-4.52595138549805,-0.256374448537827
+				rotation = 3.090862E-08,-0.7071067,0.7071069,3.090862E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 29
+				srfN = srfAttach, 6
+				mass = 0.1125
+				temp = -199.8468
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Control.RCS.Block.R12
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCS
+					isEnabled = True
+					isEnabled = True
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = B9.Control.RCS.Block.R12
+				uid = 294368596
+				mid = 330095249
+				launchID = 3
+				parent = 6
+				position = 0,-4.52595138549805,0.256374388933182
+				rotation = 0.707107,6.181725E-08,-6.181724E-08,0.7071066
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 28
+				srfN = srfAttach, 6
+				mass = 0.1125
+				temp = -199.6353
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = B9.Control.RCS.Block.R12
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCS
+					isEnabled = True
+					isEnabled = True
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = trussAdapter
+				uid = 1125054464
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,2.12459945678711,-1.05413789697195E-07
+				rotation = -1,0,0,-8.42937E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 31
+				attN = top, 0
+				mass = 0.25
+				temp = -200.4532
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = trussAdapter
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = largeAdapter
+				uid = 2696880924
+				mid = 330095249
+				launchID = 3
+				parent = 30
+				position = 0,3.28543853759766,-1.09389361568901E-07
+				rotation = 1,0,0,-8.42937E-08
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 30
+				attN = bottom, 32
+				mass = 0.1
+				temp = -200.3976
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = largeAdapter
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = asasmodule1-2
+				uid = 2791846237
+				mid = 330095249
+				launchID = 3
+				parent = 31
+				position = 0,4.29042816162109,5.83929704589536E-08
+				rotation = 1.685874E-07,0,0,-1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 33
+				attN = None, -1
+				mass = 0.2
+				temp = -200.2672
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = asasmodule1-2
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleSAS
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleReactionWheel
+					isEnabled = True
+					stateString = Operational
+					WheelState = Active
+					EVENTS
+					{
+						OnToggle
+						{
+							active = True
+							guiActive = True
+							guiIcon = Toggle Torque
+							guiName = Toggle Torque
+							category = Toggle Torque
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						Activate
+						{
+							actionGroup = None
+						}
+						Deactivate
+						{
+							actionGroup = None
+						}
+						Toggle
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = dockingPortLarge
+				uid = 3603793210
+				mid = 330095249
+				launchID = 3
+				parent = 32
+				position = 0,4.54042816162109,-2.59007038039272E-08
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = bottom, 32
+				mass = 0.2
+				temp = -199.8895
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = dockingPortLarge
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Clamp-O-Tron Docking Port Sr.
+					initialized = True
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2581.9577752677
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2079.62296081501
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+				MANEUVER
+				{
+					UT = 22776.363084516
+					dV = 0,0,46.067116125482
+				}
+			}
+			TARGET
+			{
+				type = Vessel
+				vesselID = 03f7755b-6520-4829-a250-ec8e62acc18a
+			}
+			CTRLSTATE
+			{
+				pitch = -2.833228E-05
+				yaw = 0.04578494
+				roll = 2.946518E-06
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = 8f709279f78a4cf4a44992122c0e3f77
+			name = Station Solar Truss Debris
+			type = Debris
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 7.59999999999309
+			lct = 2326.46908874448
+			root = 0
+			lat = -0.440407250781146
+			lon = 311.056875672367
+			alt = 76045.5524062366
+			hgt = -1
+			nrm = -0.2620159,0.8446267,0.4668546
+			rot = 0.1442514,-0.7108582,0.604815,-0.3287414
+			CoM = -0.0001409352,-0.6975741,7.988513E-05
+			stg = 2
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 864556.039622566
+				ECC = 0.278124148870314
+				INC = 0.721746864338624
+				LPE = 167.914904218817
+				LAN = 222.354599448895
+				MNA = 0.497136039268059
+				EPH = 2334.06908874447
+				REF = 1
+			}
+			PART
+			{
+				name = KW2mDecoupler
+				uid = 3676374883
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 1
+				sqor = 2
+				sidx = 4
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				attN = None, -1
+				mass = 0.5
+				temp = 0.433592
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mDecoupler
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = True
+					EVENTS
+					{
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KW2mNoseCone
+				uid = 1337172456
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,-0.130001068115234,-2.36574404510748E-08
+				rotation = 1,0,0,2.528811E-07
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 0
+				mass = 0.03
+				temp = 63.88792
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mNoseCone
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KWsrbUllage
+				uid = 116719681
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 0,-1.0632826089859,-0.954927861690521
+				rotation = -0.9804851,-3.621952E-08,7.26229E-09,-0.1965942
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 0
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				srfN = srfAttach, 1
+				mass = 0.25
+				temp = 83.17447
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KWsrbUllage
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 0
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KWsrbUllage
+				uid = 1089204377
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 0.954928159713745,-1.06328201293945,2.3974450868991E-07
+				rotation = -0.6933064,0.1390129,-0.6933088,-0.1390131
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 1
+				attm = 1
+				sym = 2
+				sym = 4
+				sym = 5
+				srfN = srfAttach, 1
+				mass = 0.25
+				temp = 83.13425
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KWsrbUllage
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 0
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KWsrbUllage
+				uid = 3959232619
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 0,-1.06328141689301,0.954927682876587
+				rotation = 3.559619E-08,0.1965939,-0.980485,-2.762623E-08
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 2
+				attm = 1
+				sym = 2
+				sym = 3
+				sym = 5
+				srfN = srfAttach, 1
+				mass = 0.25
+				temp = 83.09753
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KWsrbUllage
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 0
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KWsrbUllage
+				uid = 1837078818
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = -0.95492821931839,-1.06328201293945,4.60294202753175E-08
+				rotation = 0.6933064,0.1390129,-0.6933088,0.139013
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sidx = 3
+				attm = 1
+				sym = 2
+				sym = 3
+				sym = 4
+				srfN = srfAttach, 1
+				mass = 0.25
+				temp = 83.06008
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KWsrbUllage
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = True
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 1
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = False
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = SolidFuel
+					amount = 0
+					maxAmount = 10
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = True, 2119.66296081497
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2079.62296081501
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = e3b28f563a2f4206a893a4137a214b97
+			name = Station Solar Truss Debris
+			type = Debris
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 236.719335937434
+			lct = 2581.9577752677
+			root = 0
+			lat = -0.748181326131595
+			lon = 27.6310941711073
+			alt = 107791.039023413
+			hgt = -1
+			nrm = -0.9129019,0.344886,-0.2183204
+			rot = -0.1324995,-0.8755643,-0.4168954,0.2050107
+			CoM = 3.695488E-05,-8.295816,-0.0001871586
+			stg = 2
+			prst = False
+			ref = 0
+			ctrl = False
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 705386.955068438
+				ECC = 0.00414914633829268
+				INC = 0.820218532881544
+				LPE = 79.2947995999707
+				LAN = 230.48667434404
+				MNA = 3.196258602946
+				EPH = 2642.79862487702
+				REF = 1
+			}
+			PART
+			{
+				name = KW2mDecoupler
+				uid = 4238581426
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 1
+				sqor = 1
+				sidx = 1
+				attm = 0
+				srfN = None, -1
+				attN = bottom, 1
+				attN = None, -1
+				mass = 0.5
+				temp = -199.9643
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = False
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mDecoupler
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					isDecoupled = True
+					EVENTS
+					{
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = DecouplerJointReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = KW2mtankL4
+				uid = 1892057638
+				mid = 330095249
+				launchID = 3
+				parent = 0
+				position = 0,-5.13000106811523,-1.02072525236772E-13
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 0
+				srfN = None, -1
+				attN = top, 0
+				attN = bottom, 2
+				mass = 4.24
+				temp = -200.3041
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mtankL4
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = ToggleFlag
+							guiName = ToggleFlag
+							category = ToggleFlag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = LiquidFuel
+					amount = 29.591964304054
+					maxAmount = 3456
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxidizer
+					amount = 36.1677546631569
+					maxAmount = 4224
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = KW2mengineMaverickV
+				uid = 431912916
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 0,-11.3800010681152,-2.44181194361537E-13
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				istg = 1
+				dstg = 2
+				sqor = 1
+				sidx = 2
+				attm = 0
+				srfN = None, -1
+				attN = None, -1
+				attN = top2, 1
+				attN = None, -1
+				mass = 6
+				temp = -199.8666
+				expt = 0.5
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = KW2mengineMaverickV
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = True
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 66.5
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					EVENTS
+					{
+						LockGimbal
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lock Gimbal
+							guiName = Lock Gimbal
+							category = Lock Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						FreeGimbal
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Free Gimbal
+							guiName = Free Gimbal
+							category = Free Gimbal
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAlternator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleJettison
+					isEnabled = True
+					EVENTS
+					{
+						Jettison
+						{
+							active = False
+							guiActive = True
+							guiIcon = Jettison
+							guiName = Jettison
+							category = Jettison
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						JettisonAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = FARBasicDragModel
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 0
+					maxAmount = 0.239999994635582
+					flowState = True
+					isTweakable = False
+					hideFlow = True
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				uid = 2711776517
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = -1.34814143180847,-9.3886604309082,1.13122498989105
+				rotation = 4.235442E-08,-0.3420201,9.082945E-08,-0.9396927
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 4
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 1
+				mass = 0.02
+				temp = -200.0285
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 15
+					maxdeflectFlap = 15
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				uid = 3909249267
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 0.659261584281921,-9.38866138458252,1.63172554969788
+				rotation = 1.554374E-07,-0.8290375,-1.37647E-07,-0.559193
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 5
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 1
+				mass = 0.02
+				temp = -200.0189
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 15
+					maxdeflectFlap = 15
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				uid = 1618206473
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 1.75558757781982,-9.38865661621094,-0.122764997184277
+				rotation = 2.091485E-07,-0.9993908,-3.13547E-07,0.03489944
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 1
+				mass = 0.02
+				temp = -200.0095
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 15
+					maxdeflectFlap = 15
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				uid = 1818092858
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = 0.425750613212585,-9.38865566253662,-1.70760035514832
+				rotation = 1.829721E-07,-0.7880107,-3.696827E-07,0.6156616
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 7
+				srfN = srfAttach, 1
+				mass = 0.02
+				temp = -200.0032
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 15
+					maxdeflectFlap = 15
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = R8winglet
+				uid = 4140663109
+				mid = 330095249
+				launchID = 3
+				parent = 1
+				position = -1.49245929718018,-9.38865661621094,-0.932591438293457
+				rotation = 8.690647E-08,-0.2756374,-2.846122E-07,0.9612617
+				mirror = 1,1,1
+				istg = 2
+				dstg = 2
+				sqor = -1
+				sidx = -1
+				attm = 1
+				sym = 3
+				sym = 4
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 1
+				mass = 0.02
+				temp = -199.9905
+				expt = 0.1
+				state = 1
+				connected = False
+				attached = True
+				flag = Flags/069 - LEGO Space Program
+				rTrf = R8winglet
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				MODULE
+				{
+					name = FARControllableSurface
+					isEnabled = True
+					pitchaxis = True
+					yawaxis = True
+					rollaxis = True
+					isFlap = False
+					isSpoiler = False
+					flapDeflectionLevel = 2
+					maxdeflect = 15
+					maxdeflectFlap = 15
+					pitchaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					yawaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					rollaxis_UIEditor
+					{
+						controlEnabled = True
+					}
+					isFlap_UIEditor
+					{
+						controlEnabled = True
+					}
+					isSpoiler_UIEditor
+					{
+						controlEnabled = True
+					}
+					maxdeflect_UIEditor
+					{
+						controlEnabled = True
+						minValue = -15
+						maxValue = 30
+						stepIncrement = 0.5
+					}
+					maxdeflectFlap_UIEditor
+					{
+						controlEnabled = True
+						minValue = -30
+						maxValue = 85
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						DeflectMore
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect more
+							guiName = Deflect more
+							category = Deflect more
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeflectLess
+						{
+							active = False
+							guiActive = True
+							guiIcon = Deflect less
+							guiName = Deflect less
+							category = Deflect less
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ActivateSpoiler
+						{
+							actionGroup = Brakes
+						}
+						IncreaseDeflect
+						{
+							actionGroup = None
+						}
+						DecreaseDeflect
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 2326.46908874448
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 2079.62296081501
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+		}
+	}
+	ROSTER
+	{
+		KERBAL
+		{
+			name = Jebediah Kerman
+			type = Crew
+			brave = 0.5
+			dumb = 0.5
+			badS = True
+			state = Assigned
+			ToD = 0
+			idx = 0
+		}
+		KERBAL
+		{
+			name = Bill Kerman
+			type = Crew
+			brave = 0.5
+			dumb = 0.8
+			badS = False
+			state = Assigned
+			ToD = 0
+			idx = 1
+		}
+		KERBAL
+		{
+			name = Bob Kerman
+			type = Crew
+			brave = 0.3
+			dumb = 0.1
+			badS = False
+			state = Available
+			ToD = 0
+			idx = -1
+		}
+	}
+	MESSAGESYSTEM
+	{
+		flash = False
+	}
+}
